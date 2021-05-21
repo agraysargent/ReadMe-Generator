@@ -5,12 +5,12 @@ const questions = [];
 const fs = require ("fs");
 const util = require ("util");
 const inquirer = require ("inquirer");
-const generateReadMe = require ("./utils/generateReadMe");
+const generateMarkdown = require ("./assets/utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
-function promptUser(){
+async function promptUser(){
     return inquirer.prompt([
         {
             type:"input",
@@ -37,8 +37,14 @@ function promptUser(){
             name: "license",
             message: "Select the license for this project:",
             choices: [
-                "",
-                // list choices here, work with tutor
+                "GNU AGPLv3",
+                "GNU GPLv3",
+                "GNU LGPLv3",
+                "Mozilla Public License 2.0",
+                "MIT License",
+                "Apache License 2.0",
+                "Boost Software License 1.0",
+                "The Unlicense",
             ]
         },
         {
@@ -66,16 +72,30 @@ function promptUser(){
 }
 
 // TODO: Create a function to initialize app
-async function init() {}
+async function init() {
 try {
-    const answers = await promptUser();
-    const generateContent = generateReadMe(answers);
-    await writeFileAsync('./dist/README.md', generateContent); 
-    // work on line 73 with tutor
-    console.log ('ReadMe Success!');
+    // promptUser().then((value) => {
+    //     console.log(value);
+    //     console.log(generateReadMe(value))
+    // })
+    const data = await promptUser()
+    
+
+    let markdown = generateMarkdown(data)
+    await writeFileAsync('./folder/README.md', markdown);
+    // promptUser;
+    // const generateContent = generateReadMe(answers);
+    // await writeFileAsync('./dist/README.md', generateContent); 
+    // // work on line 73 with tutor
+    // console.log ('ReadMe Success!');
 } catch(error){
     console.log(error);
+}
 }
 
 // Function call to initialize app
 init();
+// promptUser().then((value) => {
+//     console.log(value);
+//     console.log(generateReadMe(value))
+// })
