@@ -33,6 +33,7 @@ async function promptUser(){
             message: "What is this project used for?"
         },
         {
+            // list licenses for each item
             type: "list",
             name: "license",
             message: "Select the license for this project:",
@@ -86,7 +87,6 @@ try {
     // promptUser;
     // const generateContent = generateReadMe(answers);
     // await writeFileAsync('./dist/README.md', generateContent); 
-    // // work on line 73 with tutor
     // console.log ('ReadMe Success!');
 } catch(error){
     console.log(error);
