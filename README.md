@@ -1,6 +1,6 @@
 # ReadMe-Generator
 
-This assignment required us to create a ReadMe Generator that would enable users to generate their own ReadMe quickly and efficiently by utilizing node.js and javascript.
+This assignment required us to create a ReadMe Generator to generate their ReadMe quickly and efficiently by utilizing node.js and javascript.
 
 # User Story
 
@@ -10,11 +10,11 @@ SO THAT I can quickly create a professional README for a new project
 
 # Description
 
-ReadMe Generators are crucial as they shorten the time used when working on a project all while creating a professionally done ReadMe for users to upload.
+ReadMe Generators are crucial as they shorten the time used when working on a project while creating a professionally done ReadMe for users to upload.
 
 # Considerations
 
-As I worked through this assignment, I ran into syntax errors and placement issues. Something to consider where each item is placed, and to ensure your API link is working appropriately.
+As I worked through this assignment, I ran into syntax errors and placement issues. Something to consider where each item is placed and to ensure your API link is working appropriately.
 
 # Acceptance Criteria
 
@@ -38,4 +38,6 @@ THEN I am taken to the corresponding section of the README
 
 Angelica Sargent
 
-![# Gif](https://)
+# Gif
+
+![# Gif](./assets/videos/readme-gif.gif)
