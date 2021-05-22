@@ -41,3 +41,7 @@ Angelica Sargent
 # Gif
 
 ![# Gif](./assets/videos/readme-gif.gif)
+
+# Video
+
+[Check out the generator here!](https://drive.google.com/file/d/1hbQHVLa-c6eoO4uSCLTG9hFUQetawqof/view?usp=sharing)
